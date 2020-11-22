@@ -16,7 +16,17 @@ service recordsService on ep {
     }
     resource function readRecord(grpc:Caller caller, hashCode value) {
         // Implementation goes here.
+    string myCode = value.Key;
 
+    foreach recordInfo album in SongList {
+
+        
+        if (album.Key == value.Key){
+           io:println("Found");
+
+           var result = caller->send(album);
+            
+            if(result is grpc:Error) {
         // You should return a recordInfo
     }
 }
