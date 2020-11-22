@@ -20,3 +20,18 @@ else {
               //end
 
 
+result = caller->sendError(404, "GRPC=> An Error Occured While Sending Record. ");
+                io:println("GRPC=> An Error Occured While Sending Record. ");
+                result = caller->complete();
+           
+            } else  {
+                io:println("Sent");
+                result = caller->complete();
+            }
+
+ result = caller->complete();
+            // }
+                io:println("End");
+        }
+
+    }
