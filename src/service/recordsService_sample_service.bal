@@ -27,6 +27,7 @@ service recordsService on ep {
            var result = caller->send(album);
             
             if(result is grpc:Error) {
+                
         // You should return a recordInfo
     }
 }
