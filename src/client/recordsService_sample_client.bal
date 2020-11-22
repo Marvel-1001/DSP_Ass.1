@@ -7,7 +7,7 @@ public function main (string... args) {
 
         if (resultFromRead is grpc:Error ){
 
-            io:println("Error....");
+            io:println("Error....");}
 }
 else {
         
