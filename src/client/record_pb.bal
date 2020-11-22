@@ -117,12 +117,4 @@ function getDescriptorMap() returns map<string> {
         
     };
 }
-else {
-        
-               searchedRecord =  resultFromRead[0];
-               io:println("*******************************");
-                io:println(searchedRecord);
-               io:println("*******************************");
-               
-        }
-              //end
+
