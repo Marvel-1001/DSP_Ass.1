@@ -9,5 +9,13 @@ public function main (string... args) {
 
             io:println("Error....");
 }
-
+else {
+        
+               searchedRecord =  resultFromRead[0];
+               io:println("*******************************");
+                io:println(searchedRecord);
+               io:println("*******************************");
+               
+        }
+              //end
 
